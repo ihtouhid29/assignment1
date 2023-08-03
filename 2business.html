@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page with Three Divs</title>
+  <style>
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 30px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .main-content {
+      display: flex;
+      flex: 1;
+    }
+
+    .left {
+      width: 20%;
+      background-color: #9777be;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #f00;
+      position: relative;
+    }
+
+    .left .city-skyline {
+      background-image: url("");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+    }
+
+    .left .company-logo {
+      max-width: 100px;
+      margin-top: 20px;
+    }
+
+    .center {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+
+    .center .product-image {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .center .product-video {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    .center .product-audio {
+      margin-bottom: 20px;
+      float: right;
+    }
+
+    .right {
+      width: 20%;
+      background-color: #f0f0f0;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+
+    h1, h2, p {
+      margin-bottom: 10px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #555;
+    }
+
+    p {
+      font-size: 16px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    Amader Bkash
+  </div>
+  <div class="main-content">
+    <div class="left">
+      <div class="city-skyline"></div>
+      <img src="https://1000logos.net/wp-content/uploads/2021/02/Bkash-logo-768x512.png" alt="Company Logo" class="company-logo">
+    </div>
+    <div class="center">
+      <img width="400" src="https://cdn.shopify.com/s/files/1/2287/9679/files/Bata_E-Com_Payment-process_grande.jpg?v=1518404102" class="product-image">
+
+      <h2>Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/iqoW6w2UdPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="product-audio"><br>
+        <h2>Audio</h2>
+        <audio controls>
+          <source src="ab.mp3" type="audio/mp3">
+        </audio>
+      </div>
+    </div>
+    <div class="right">
+      <div class="sidebar">
+        <h2>Related Products</h2>
+        <ul>
+          <li>Send Money</li>
+          <a href="https://www.bkash.com/en/products-services?service=send-money"> <img src="https://www.bkash.com/uploaded_contents/services/icons/01-send-money_1666154832042.webp" alt=""></a> <br>
+          <li>Mobilee  Recharge</li>
+          <a href="https://www.bkash.com/en/products-services?service=mobile-recharge"> <img src="https://www.bkash.com/uploaded_contents/services/icons/02-mobile-recharge_1666155167971.webp" alt=""></a> <br>
+          <li>Cash Out</li>
+          <a href="https://www.bkash.com/en/products-services?service=cashout"><img src="https://www.bkash.com/uploaded_contents/services/icons/03-cash-out_1666158620022.webp" alt=""></a>
+        </ul>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="social-media-icons">
+        <a href="https://www.facebook.com/bkashlimited"><img width="50" src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" alt="Facebook"></a>
+        <a href="https://twitter.com/bkash_ltd?lang=en"><img width="80" src="https://freebiehive.com/wp-content/uploads/2023/07/Twitter-X-Logo-PNG.jpg" alt="Twitter"></a>
+        <a href=""><img width="50" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capital Selector</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #008080;
+            margin-top: 40px;
+            letter-spacing: 2px;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 20px;
+            margin-right: 10px;
+            color: #008080;
+        }
+
+        select {
+            font-size: 18px;
+            padding: 12px;
+            border: 2px solid #008080;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            color: #333;
+            appearance: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        select:hover {
+            background-color: #f0f0f0;
+        }
+
+        select:focus {
+            outline: none;
+            background-color: #e0e0e0;
+        }
+
+        #capitalDisplay {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #008080;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #777;
+        }
+
+        footer a {
+            color: #008080;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Capital Selector</h1>
+        <label for="countrySelect">Select a country:</label>
+        <select id="countrySelect" onchange="displayCapital()">
+            <option value="" disabled selected>Select a country...</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+        </select>
+
+        <p id="capitalDisplay"></p>
+    </div>
+
+    <footer>
+        All Rights reserved by <a href="https://www.facebook.com/ihtouhid29" target="_blank">Ibnul Hossain Touhid</a>
+    </footer>
+
+    <script>
+        function displayCapital() {
+            var selectElement = document.getElementById("countrySelect");
+            var capitalDisplayElement = document.getElementById("capitalDisplay");
+            var selectedCountry = selectElement.value;
+            var capital;
+
+            switch (selectedCountry) {
+                case "UK":
+                    capital = "London";
+                    break;
+                case "Germany":
+                    capital = "Berlin";
+                    break;
+                case "France":
+                    capital = "Paris";
+                    break;
+                case "Bangladesh":
+                    capital = "Dhaka";
+                    break;
+                case "India":
+                    capital = "New Delhi";
+                    break;
+                default:
+                    capital = "";
+            }
+
+            capitalDisplayElement.innerText = capital;
+        }
+    </script>
+</body>
+</html>
